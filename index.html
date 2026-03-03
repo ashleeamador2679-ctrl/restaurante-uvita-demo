@@ -15,14 +15,21 @@
         }
 
         header {
-            background-image: url('https://tableo.com/wp-content/uploads/Restaurant-Stock-Images-e1699951587809.webp');
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ),
+                url('https://tableo.com/wp-content/uploads/Restaurant-Stock-Images-e1699951587809.webp');
             background-size: cover;
-            background-position: center; 
+            background-position: center;
             color: white;
             text-align: center;
-            padding: 100px 20px;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0, 0.4);
+            padding: 120px 20px;
+
+            header h1 {
+                font-size: 52px;
+                text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            }
         }
 
         section {
