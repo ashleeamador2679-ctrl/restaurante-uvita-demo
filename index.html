@@ -187,38 +187,77 @@
             color: var(--color-acento);
         }
 
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                padding: 15px 20px;
-            }
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 10px;
-                text-align: center;
-            }
-            
-            header {
-                padding: 80px 20px;
-            }
-            
-            header h1 {
-                font-size: 32px;
-            }
-            
-            section {
-                padding: 40px 20px;
-            }
-            
-            .menu-item {
-                font-size: 16px;
-            }
-            
-            .galeria {
-                grid-template-columns: 1fr;
-            }
-        }
+       @media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 70px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    /* SECTIONS */
+    section {
+        padding: 40px 15px;
+    }
+
+    section h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    section p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* MENU */
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 16px;
+    }
+
+    .precio {
+        font-size: 16px;
+    }
+
+    /* GALERIA */
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 220px;
+    }
+
+}
     </style>
 
 </head>
