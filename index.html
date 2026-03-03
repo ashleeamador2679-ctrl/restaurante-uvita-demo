@@ -96,6 +96,18 @@
                 transform: translateY(0);
             }
         }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+            font-size: 18px;
+        }
+        .precio {
+            font-weight: bold;
+            color: #008c6e;
+        }
     </style>
 
 </head>
@@ -114,11 +126,19 @@
 
     <section>
         <h2>Menú Destacado</h2>
-        <ul>
-            <li>Casado con pescado</li>
-            <li>Ceviche fresco</li>
-            <li>Arroz con mariscos</li>
-        </ul>
+           <h2>Menú Destacado</h2>
+           <div class="menu-item">
+               <span>Casado con pescado</span>
+               <span class="precio">₡4.500</span>
+           </div>
+           <div class="menu-item">
+               <span>Ceviche fresco</span>
+               <span class="precio">₡3.800</span
+                                              </div>
+           <div class="menu-item">
+               <span>Arroz con mariscos</span>
+               <span class="precio">₡5.500</span>
+           </div>
     </section>
     
     <section>
