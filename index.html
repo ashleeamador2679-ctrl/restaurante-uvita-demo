@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --color-texto: #444;
+            --color-titulos: #1c1c1c;
+            --color-acento: #008c6e;
+        }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -165,8 +170,14 @@
             scroll-behavior: smooth;
         }
 
-        p {
-            color: black;
+       section p {
+           color: var(--color-texto);
+       }
+        section h2 {
+            color: var(--color-titulos);
+        }
+        .precio {
+            color: var(--color-acento);
         }
     </style>
 
