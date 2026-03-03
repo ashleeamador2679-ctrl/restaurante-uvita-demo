@@ -51,6 +51,23 @@
         .boton-whatsapp:hover {
             background-color: #1ebe5d
         }
+
+        
+        .galeria {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap
+        }
+        .galeria img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s
+        }
+        .galeria img:hover {
+            transform: scale(1.05)
+        }
+        
     </style>
 
 </head>
@@ -74,6 +91,16 @@
             <li>Ceviche fresco</li>
             <li>Arroz con mariscos</li>
         </ul>
+    </section>
+    
+    <section>
+    <h2>Galería</h2>
+
+    <div class="galeria">
+        <img src="https://pixabay.com/es/images/search/plato%20de%20comida/" alt="Plato 1">
+        <img src="https://www.pexels.com/es-es/buscar/comida%20de%20restaurante/" alt="Plato 2">
+        <img src="https://pixabay.com/es/images/search/plato%20de%20comida/" alt="Plato 3">
+    </div>
     </section>
 
     <section>
