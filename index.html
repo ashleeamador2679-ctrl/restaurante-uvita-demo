@@ -235,14 +235,19 @@
         font-size: 15px;
         line-height: 1.6;
     }
+           section {
+               max-width: 100%;
+               margin: 0;
+           }
 
     /* MENU */
-    .menu-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-        font-size: 16px;
-    }
+   .menu-item {
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       font-size: 15px;
+       padding: 10px 0;
+   }
 
     .precio {
         font-size: 16px;
@@ -258,6 +263,12 @@
     }
 
 }
+    .menu-item span:first-child {
+        max-width: 70%;
+    }
+        .precio {
+            white-space: nowrap;
+        }
     </style>
 
 </head>
