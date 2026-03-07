@@ -35,7 +35,8 @@ nav a {
     font-size: 16px;
 }
 
-background-image: url("https://tableo.com/es/marketing-de-restaurantes/fotos-de-comida-gratis-para-el-sitio-web-de-su-restaurante/")
+.hero{ 
+    background-image: url("https://tableo.com/es/marketing-de-restaurantes/fotos-de-comida-gratis-para-el-sitio-web-de-su-restaurante/")
     background-position: center;
     height: 70vh;
 
