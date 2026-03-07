@@ -1,33 +1,118 @@
-.hero {
-    background-image: url('path/to/your/image.jpg');
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* RESET BASICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
     color: white;
     text-align: center;
+    padding: 20px 0;
 }
 
-h1, h2 {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #00a884;
+}
+
+/* HERO */
+.hero {
+    background-image: url("https://tableo.com/wp-content/uploads/Restaurant-Stock-Images-e1699951587809.webp");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
     padding: 20px;
 }
 
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BOTON */
+.btn {
+    background-color: #00a884;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #008f72;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE (CELULAR) */
 @media (max-width: 768px) {
-    .hero {
-        height: 70vh;
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
-    h1 {
-        font-size: 2.5em;
+
+    .hero h2 {
+        font-size: 28px;
     }
-    h2 {
-        font-size: 1.5em;
+
+    .hero p {
+        font-size: 16px;
     }
+
 }
