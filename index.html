@@ -69,6 +69,31 @@
           transform: scale(1.05);
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
        }
+
+       /* Animación al cargar */
+       body {
+          animation: aparecer 1s ease-in-out;
+       }
+       @keyframes aparecer {
+          from {
+             opacity: 0;
+          }
+          to {
+             opacity: 1;
+          }
+       }
+
+       .menu-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 12px 0;
+          border-bottom: 1px solid #ddd;
+          font-size: 18px;
+       }
+       .precio {
+          font-weight: bold;
+          color: #008c6e;
+       }
     </style>
 
 </head>
@@ -86,13 +111,23 @@
     </section>
 
     <section>
-        <h2>Menú Destacado</h2>
-        <ul>
-            <li>Casado con pescado</li>
-            <li>Ceviche fresco</li>
-            <li>Arroz con mariscos</li>
-        </ul>
-    </section>
+    <h2>Menú Destacado</h2>
+
+    <div class="menu-item">
+        <span>Casado con pescado</span>
+        <span class="precio">₡4.500</span>
+    </div>
+
+    <div class="menu-item">
+        <span>Ceviche fresco</span>
+        <span class="precio">₡3.800</span>
+    </div>
+
+    <div class="menu-item">
+        <span>Arroz con mariscos</span>
+        <span class="precio">₡5.500</span>
+    </div>
+</section>
 
    <section>
       <h2>Galería</h2>
