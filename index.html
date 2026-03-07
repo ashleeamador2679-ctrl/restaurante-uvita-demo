@@ -72,9 +72,6 @@
        }
 
        /* Animación al cargar */
-       body {
-          animation: aparecer 1s ease-in-out;
-       }
        @keyframes aparecer {
           from {
              opacity: 0;
@@ -82,6 +79,9 @@
           to {
              opacity: 1;
           }
+       }
+       body {
+          animation: aparecer 1s ease-in-out;
        }
 
        .menu-item {
